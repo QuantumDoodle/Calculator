@@ -1,0 +1,71 @@
+body {
+  background-image: url('back-school-decoration-with-pencils-calculator-space.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+  background-size: cover; /* Cover ensures the background image covers the entire viewport */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+.calculator {
+  width: 80%; /* Adjust width as needed */
+  max-width: 400px; /* Set a maximum width to prevent the calculator from becoming too large on larger screens */
+  margin: 20px auto; /* Center the calculator */
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.8); /* Adding opacity to make the background slightly transparent */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Rest of your existing CSS styles */
+
+
+.display {
+  width: calc(100% - 10px);
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.clear {
+  grid-column: span 2;
+  background-color: #ff6666;
+  color: white;
+}
+
+.equals {
+  grid-column: span 2;
+  background-color: #66cc66;
+  color: white;
+}
+
+.operator {
+  background-color: #3399ff;
+  color: white;
+}
+
+.number {
+  background-color: #e6e6e6;
+}
+
+button:hover {
+  background-color: #ccc;
+}
